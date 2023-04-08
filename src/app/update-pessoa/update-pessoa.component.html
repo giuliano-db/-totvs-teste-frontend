@@ -1,0 +1,43 @@
+
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Atualizar Pessoa </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Nome</label>
+                        <input type="text" class="form-control" id="nome" [(ngModel)]="pessoa.nome"
+                            name="nome">
+                    </div>
+                     
+                    <div class="form-group">
+                        <label> Endereço</label>
+                        <input type="text" class="form-control" id="endereco" [(ngModel)]="pessoa.endereco"
+                            name="endereco">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Bairro</label>
+                        <input type="text" class="form-control" id="bairro" [(ngModel)]="pessoa.bairro"
+                            name="bairro">
+                    </div>
+                    <div *ngFor="let telefone  of pessoa.telefones;let i = index" class="form-group">
+                        <label>Telefone :</label>
+                        <input class="form-control" type="text" name="telefone" name={{i}} [(ngModel)]="telefone.numero">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                        <button class="btn btn-secondary" type="button"  (click)="adicionarTelefone()">Adicionar telefone</button>
+                  </div>
+             
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

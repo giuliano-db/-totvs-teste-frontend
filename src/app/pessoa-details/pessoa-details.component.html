@@ -1,0 +1,17 @@
+<h3> Visualizar Pessoa</h3>
+<div>
+    <div>
+        <label> <b> Nome: </b></label> {{pessoa.nome}}
+    </div>
+    <div>
+        <label> <b> Endereço: </b></label> {{pessoa.endereco}}
+    </div>
+    <div>
+        <label> <b> Bairro: </b></label> {{pessoa.bairro}}
+    </div>
+
+    <div *ngFor="let telefone  of pessoa.telefones;let i = index" >
+        <label><b>Telefone {{i+1}}: </b></label> {{telefone.numero}}
+        
+  </div>
+</div>
