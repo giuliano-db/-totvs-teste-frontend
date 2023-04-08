@@ -7,7 +7,8 @@ import { PessoaListComponent } from './pessoa-list/pessoa-list.component';
 import { CreatePessoaComponent } from './create-pessoa/create-pessoa.component';
 import { FormsModule} from '@angular/forms';
 import { UpdatePessoaComponent } from './update-pessoa/update-pessoa.component';
-import { PessoaDetailsComponent } from './pessoa-details/pessoa-details.component'
+import { PessoaDetailsComponent } from './pessoa-details/pessoa-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PessoaDetailsComponent } from './pessoa-details/pessoa-details.componen
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
