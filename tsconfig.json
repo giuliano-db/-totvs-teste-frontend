@@ -25,6 +25,9 @@
       "dom"
     ]
   },
+  "files": [
+    "src/polyfills.ts" // caminho para o arquivo polyfills.ts
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
